@@ -51,6 +51,7 @@ TARGET_PREBUILT_KERNEL := device/umidigi/f1/prebuilt/zImage
 
 # Encryption
 PLATFORM_SECURITY_PATCH := 2025-12-31
+TW_INCLUDE_FBE := true
 
 # Recovery
 BOARD_HAS_NO_SELECT_BUTTON := true
@@ -78,3 +79,10 @@ TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_THEME := portrait_hdpi
 TW_USE_TOOLBOX := true
+TW_EXTRA_LANGUAGES := true
+TWRP_INCLUDE_LOGCAT := true
+TARGET_USES_LOGD := true
+TW_EXCLUDE_DEFAULT_USB_INIT := true
+
+# Vold
+TARGET_USE_CUSTOM_LUN_FILE_PATH := "/config/usb_gadget/g1/functions/mass_storage.usb0/lun.0/file"
