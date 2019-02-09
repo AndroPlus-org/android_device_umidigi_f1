@@ -67,6 +67,7 @@ TW_EXTERNAL_STORAGE_MOUNT_POINT :="external_sd"
 TW_MTP_DEVICE := /dev/mtp_usb
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
+TW_THEME := portrait_hdpi
 
 # Vold
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.usb0/lun.0/file
